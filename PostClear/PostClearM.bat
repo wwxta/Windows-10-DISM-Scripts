@@ -153,7 +153,7 @@ title Applying PostClearM.reg
 %programdata%\PostClear\AdvancedRun.exe /EXEFilename %windir%\System32\reg.exe /CommandLine "import %programdata%\PostClear\PostClearM.reg" /RunAs 4 /WaitProcess 1 /Run
 title Copy Edge icons
 move %programdata%\PostClear\Assets %windir%\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\Assets
-title Edge
+title Edge location
 mklink /j "%programfiles(x86)%\Microsoft\EdgeCore\92.0.902.67" "%programfiles(x86)%\Microsoft\Edge\Application\92.0.902.67"
 mklink /j "%programfiles(x86)%\Microsoft\EdgeWebView\Application\92.0.902.67" "%programfiles(x86)%\Microsoft\Edge\Application\92.0.902.67"
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062} /v location /t REG_SZ /d "%programfiles(x86)%\Microsoft\Edge\Application"

@@ -93,12 +93,22 @@ set DEL=Z:\Install\Windows\WinSxS\Manifests\amd64_microsoft-windows-upfc_31bf385
 icacls %DEL% /grant "%username%":f /c /l /q
 del /f /q %DEL%
 title Calc
-set DEL=Z:\Install\Windows\System32\calc.exe
-takeown /f %DEL%
-icacls %DEL% /grant "%username%":f /c /l /q
-del /f /q %DEL%
+set DELETELIST=Z:\Install\Windows\WinSxS\amd64_microsoft-windows-calc_31bf3856ad364e35_10.0.19041.1_none_5faf0ebeba197e78 Z:\Install\Windows\WinSxS\wow64_microsoft-windows-calc_31bf3856ad364e35_10.0.19041.1_none_6a03b910ee7a4073
+for %%a in (%DELETELIST%) do (
+	takeown /f %%a
+	icacls %%a /grant "%username%":f /c /l /q
+	rd /s /q %%a
+)
+set DELETELIST=Z:\Install\Windows\System32\calc.exe Z:\Install\Windows\SysWOW64\calc.exe Z:\Install\Windows\WinSxS\Manifests\amd64_microsoft-windows-calc_31bf3856ad364e35_10.0.19041.1_none_5faf0ebeba197e78.manifest Z:\Install\Windows\WinSxS\Manifests\wow64_microsoft-windows-calc_31bf3856ad364e35_10.0.19041.1_none_6a03b910ee7a4073.manifest
+for %%a in (%DELETELIST%) do (
+	takeown /f %%a
+	icacls %%a /grant "%username%":f /c /l /q
+	del /f /q %%a
+)
 move Z:\calc.exe Z:\Install\Windows\System32
-%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy remotesigned -Command "& Get-Acl -Path Z:\Install\Windows\System32\control.exe | Set-Acl -Path %DEL%"
+%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy remotesigned -Command "& Get-Acl -Path Z:\Install\Windows\System32\control.exe | Set-Acl -Path Z:\Install\Windows\System32\calc.exe"
+move Z:\calc_64.exe Z:\Install\Windows\SysWOW64\calc.exe
+%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy remotesigned -Command "& Get-Acl -Path Z:\Install\Windows\System32\control.exe | Set-Acl -Path Z:\Install\Windows\SysWOW64\calc.exe"
 if exist Z:\Install\Windows\en-US\explorer.exe.mui (
 	del /f /q Z:\EN.txt
 	del /f /q Z:\calc.exe.cn.mui
@@ -118,26 +128,6 @@ if exist Z:\Install\Windows\ru-RU\explorer.exe.mui (
 	copy Z:\calc.exe.ru.mui Z:\Install\Windows\System32\ru-RU\calc.exe.mui
 	move Z:\calc.exe.ru.mui Z:\Install\Windows\SysWOW64\ru-RU
 )
-set DEL=Z:\Install\Windows\WinSxS\amd64_microsoft-windows-calc_31bf3856ad364e35_10.0.19041.1_none_5faf0ebeba197e78
-takeown /f %DEL%
-icacls %DEL% /grant "%username%":f /c /l /q
-rd /s /q %DEL%
-set DEL=Z:\Install\Windows\WinSxS\Manifests\amd64_microsoft-windows-calc_31bf3856ad364e35_10.0.19041.1_none_5faf0ebeba197e78.manifest
-icacls %DEL% /grant "%username%":f /c /l /q
-del /f /q %DEL%
-set DEL=Z:\Install\Windows\SysWOW64\calc.exe
-takeown /f %DEL%
-icacls %DEL% /grant "%username%":f /c /l /q
-del /f /q %DEL%
-move Z:\calc_64.exe Z:\Install\Windows\SysWOW64\calc.exe
-%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy remotesigned -Command "& Get-Acl -Path Z:\Install\Windows\System32\control.exe | Set-Acl -Path %DEL%"
-set DEL=Z:\Install\Windows\WinSxS\wow64_microsoft-windows-calc_31bf3856ad364e35_10.0.19041.1_none_6a03b910ee7a4073
-takeown /f %DEL%
-icacls %DEL% /grant "%username%":f /c /l /q
-rd /s /q %DEL%
-set DEL=Z:\Install\Windows\WinSxS\Manifests\wow64_microsoft-windows-calc_31bf3856ad364e35_10.0.19041.1_none_6a03b910ee7a4073.manifest
-icacls %DEL% /grant "%username%":f /c /l /q
-del /f /q %DEL%
 title Edge Chromium
 set DEL=Z:\Install\Windows\WinSxS\amd64_microsoft-windows-edgechromium_31bf3856ad364e35_10.0.19041.1266_none_74657031110a9d30
 takeown /f %DEL%
