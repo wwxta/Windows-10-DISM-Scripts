@@ -11,40 +11,34 @@ Image optimization by removing pre-installed junk packages, disabling update tas
 ](https://vk.com/@slmp_mod-windows-10-dism-scripts)
 
 # Using:
-- Must have full administrator rights: Computer Configuration - Windows Settings - Security Settings - Local Policies - Security Options - User Account Control: All Administrators Run in Approval Mode - Disabled.
-- To use scripts, you need an image, revision and checksums are specified in the description of script releases.
 - The image must be mounted.
-- You need any disk (if RAM, then you need support for NTFS DISM commands, SoftPerfect RAM Disk and analogues) with the letter Z (it's just the last letter of the alphabet), 11500MB in size with which DISM (SoftPerfect RAM Disk and analogues) can work.
-- Unpack the scripts, install.wim and boot.wim files (from the source folder of the .iso file) to the root of the RAM disk.
+- You need any disk (if RAM, then you need support for NTFS DISM commands, SoftPerfect RAM Disk and analogues), with the letter Z, larger than 11500MB.
+- Unpack the scripts, install.wim and boot.wim files (from the source folder of the .iso file) to the root of the disk.
+- If the system language differs from Russian, replace “ru-RU” in _Clear.bat, in the OneDrive block, with your version.
 - Run _Clear.bat and wait for the window to close.
-- Make sure there are no errors in the Clear.log file by searching: “operation”, “errors”, “not”.
-- Run CMD and run the first command from the _readme.txt file.
+- Make sure there are no errors in the Clear.log file by searching: “operation”, “errors”, “not”, “no”.
+- Launch CMD and execute the first command from the _Readme.txt file.
 - Using UltraISO (or analogues), delete the install.wim file in the .iso image and add the resulting install.esd and boot.wim.
 - The image is ready.
-- During the installation of this image, the Internet must be turned off until the system is automatically rebooted 2 times.
 
 # 应用：
-- 必须拥有完整的管理员权限：计算机配置 - Windows 设置 - 安全设置 - 本地策略 - 安全选项 - 用户帐户控制：所有管理员在批准模式下运行 - 已禁用。
-- 要使用脚本，您需要在脚本版本的描述中指定图像、修订和校验和。
-- 必须安装图像。
-- 您需要任何磁盤（如果是 RAM，則需要支持 NTFS DISM 命令、SoftPerfect RAM 磁盤和類似物），並帶有字母 Z（它只是字母表的最后一个字母）的 RAM 磁盘，大小为 11500MB，DISM（SoftPerfect RAM 磁盘和类似物）可以使用。
-- 将脚本、install.wim 和 boot.wim 文件（从 .iso 文件的源文件夹）解压到 RAM 磁盘的根目录。
-- 运行 _Clear.bat 并等待窗口关闭。
-- 通过搜索“操作”、“错误”、“不”，确保 Clear.log 文件中没有错误。
-- 运行 CMD 并运行 _readme.txt 文件中的第一个命令。
-- 使用 UltraISO（或类似物），删除 .iso 映像中的 install.wim 文件并添加生成的 install.esd 和 boot.wim。
-- 图像已准备就绪。
-- 在安裝此映像期間，必須關閉 Internet，直到系統自動重新啟動 2 次。
+- 必須安裝映像。
+- 您需要任何磁盤（如果是 RAM，則需要支持 NTFS DISM 命令、SoftPerfect RAM 磁盤和類似物），字母 Z 大於 11500MB。
+- 將腳本、install.wim 和 boot.wim 文件（從 .iso 文件的源文件夾）解壓到磁盤的根目錄。
+- 如果系統語言不同於俄語，請將 OneDrive 塊中 _Clear.bat 中的“ru-RU”替換為您的版本。
+- 運行 _Clear.bat 並等待窗口關閉。
+- 通過搜索“operation”、“errors”、“not”、“no”確保 Clear.log 文件中沒有錯誤。
+- 啟動 CMD 並執行 _Readme.txt 文件中的第一條命令。
+- 使用 UltraISO（或類似物），刪除 .iso 映像中的 install.wim 文件並添加生成的 install.esd 和 boot.wim。
+- 圖像已準備就緒。
 
 # Применение:
-- Должны быть полные права администратора: Конфигурация компьютера — Конфигурация Windows — Параметры безопасности — Локальные политики — Параметры безопасности — Контроль учетных записей: все администраторы работают в режиме одобрения — Отключено.
-- Для применения скриптов понадобиться образ, редакция и контрольные суммы указаны в описании релизов скриптов.
 - Образ должен быть смонтирован.
-- Понадобиться любой диск (если RAM, то нужна поддержка NTFS DISM команд, SoftPerfect RAM Disk и аналоги), с буквой Z (просто это последняя буква алфавита), размером 11500МБ с которым может работать DISM (SoftPerfect RAM Disk и аналоги).
-- Распаковать скрипты, файлы install.wim и boot.wim (из папки source файла .iso) в корень RAM диска.
+- Понадобиться любой диск (если RAM, то нужна поддержка NTFS DISM команд, SoftPerfect RAM Disk и аналоги), с буквой Z, размером более 11500МБ.
+- Распаковать скрипты, файлы install.wim и boot.wim (из папки source файла .iso) в корень диска.
+- В случае отличия языка системы от русского, заменить в _Clear.bat «ru-RU», в блоке OneDrive, на свою версию.
 - Запустить _Clear.bat и ожидать завершение работы окна.
-- Убедится в отсутствии ошибок в файле Clear.log по поиску: «операция», «оши», «не ».
-- Запустить CMD и выполнить первую команду из файла _readme.txt.
+- Убедится в отсутствии ошибок в файле Clear.log по поиску: «операция», «оши», «не », «нет».
+- Запустить CMD и выполнить первую команду из файла _Readme.txt.
 - С помощью UltraISO (или аналогов) удалить в .iso образе файл install.wim и добавить получившийся install.esd и boot.wim.
 - Образ готов.
-- Во время установки данного образа должен быть выключен интернет, пока система не будет автоматически 2 раза перезагружена.
