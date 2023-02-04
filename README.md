@@ -1,4 +1,4 @@
-# Windows-10-DISM-Scripts
+# Windows-10-DISM-Scripts / [Windows-11-DISM-Scripts](https://github.com/Mitradis/Windows-11-DISM-Scripts)
 Support languages\支持语言\Поддерживаемые языки: EN-US\ZH-CN\RU-RU
 
 Image optimization by removing pre-installed junk packages, disabling update tasks, disabling Defender and other minor changes. All this is done by standard means (DISM commands, CMD queries and changing registry keys). The goal is to get in a natural way (without interfering with system files) the most standard, clean image with unnecessary elements disabled. Disabled in the most efficient, safest and easiest way, without making a bunch of thoughtless and unnecessary edits.
@@ -7,8 +7,7 @@ Image optimization by removing pre-installed junk packages, disabling update tas
 
 Оптимизация образа путем удаления предустановленных пакетов программ-мусора, отключение задач обновления, отключение Защитника и другие мелкие изменения. Все это производится стандартными средствами (командами DISM, запросами CMD и изменением ключей реестра). Цель - получить естественным путем (без вмешательства в системные файлы) максимально стандартный, чистый образ с отключенными ненужными элементами. Отключенными самыми эффективными, безопасными и простыми способами, без внесения кучи бездумных и ненужных правок.
 
-Все подробности тут: [vk.com/@slmp_mod-windows-10-dism-scripts
-](https://vk.com/@slmp_mod-windows-10-dism-scripts)
+Все подробности тут: [vk.com/@slmp_mod-windows-10-dism-scripts](https://vk.com/@slmp_mod-windows-10-dism-scripts)
 
 # Using:
 - The image must be mounted.
