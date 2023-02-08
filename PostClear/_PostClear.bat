@@ -6,8 +6,11 @@ EXIT /b 0
 title Wait Explorer
 taskkill /f /im explorer.exe
 if exist %programdata%\PostClear\FirstLoad.reg (
-	title Disable Defender
+	title Stopping DiagTrack
+	net stop DiagTrack
+	title Applying FirstLoad.reg
 	%programdata%\PostClear\AdvancedRun.exe /EXEFilename %windir%\System32\reg.exe /CommandLine "import %programdata%\PostClear\FirstLoad.reg" /RunAs 8 /WaitProcess 1 /Run
+	title Deleting Defender tasks
 	schtasks /delete /tn "Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /f
 	schtasks /delete /tn "Microsoft\Windows\Windows Defender\Windows Defender Cleanup" /f
 	schtasks /delete /tn "Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan" /f
