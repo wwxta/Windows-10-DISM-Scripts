@@ -174,7 +174,7 @@ dism /unmount-wim /mountdir:Z:\Install /commit
 title Done...
 del /f /q Z:\Clear.ps1
 del /f /q Z:\Clear.reg
-del /f /q Z:\DISM.10.Scripts.zip
 del /f /q Z:\SubinAcl.exe
 del /f /q Z:\WimOptimize.exe
+del /f /q Z:\Windows-10-DISM-Scripts.zip
 del /f /q Z:\_Clear.bat

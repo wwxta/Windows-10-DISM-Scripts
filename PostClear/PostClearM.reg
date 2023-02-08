@@ -93,9 +93,6 @@ Windows Registry Editor Version 5.00
 ; Фоновая интеллектуальная служба передачи
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\BITS]
 "Start"=dword:00000004
-; Функциональные возможности для подключенных пользователей и телеметрия
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DiagTrack]
-"Start"=dword:00000004
 ; Центр обновления Windows
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wuauserv]
 "Start"=dword:00000004

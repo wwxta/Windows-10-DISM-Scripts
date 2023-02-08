@@ -24,6 +24,9 @@ Windows Registry Editor Version 5.00
 ; Центр обеспечения безопасности
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wscsvc]
 "Start"=dword:00000004
+; Функциональные возможности для подключенных пользователей и телеметрия
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DiagTrack]
+"Start"=dword:00000004
 ; Perfmon
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\DefenderApiLogger]
 "Start"=dword:00000000
