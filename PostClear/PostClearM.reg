@@ -30,8 +30,14 @@ Windows Registry Editor Version 5.00
 ; Координатор распределенных транзакций
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC]
 "Start"=dword:00000004
+; Настройка сервера удаленных рабочих столов
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SessionEnv]
+"Start"=dword:00000004
 ; Оптимизация доставки
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DoSvc]
+"Start"=dword:00000004
+; Перенаправитель портов пользовательского режима служб удаленных рабочих столов
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UmRdpService]
 "Start"=dword:00000004
 ; Сетевая служба Xbox Live
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\XboxNetApiSvc]
@@ -80,6 +86,9 @@ Windows Registry Editor Version 5.00
 "Start"=dword:00000004
 ; Служба хранилища
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\StorSvc]
+"Start"=dword:00000004
+; Службы удаленных рабочих столов
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService]
 "Start"=dword:00000004
 ; Сохранение игр на Xbox Live
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\XblGameSave]
