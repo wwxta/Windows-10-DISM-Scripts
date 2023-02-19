@@ -7,8 +7,6 @@ Image optimization by removing pre-installed junk packages, disabling update tas
 
 Оптимизация образа путем удаления предустановленных пакетов программ-мусора, отключение задач обновления, отключение Защитника и другие мелкие изменения. Все это производится стандартными средствами (командами DISM, запросами CMD и изменением ключей реестра). Цель - получить естественным путем (без вмешательства в системные файлы) максимально стандартный, чистый образ с отключенными ненужными элементами. Отключенными самыми эффективными, безопасными и простыми способами, без внесения кучи бездумных и ненужных правок.
 
-Все подробности тут: [vk.com/@slmp_mod-windows-10-dism-scripts](https://vk.com/@slmp_mod-windows-10-dism-scripts)
-
 # Using:
 - The image must be mounted.
 - You need any disk (if RAM, then you need support for NTFS DISM commands, SoftPerfect RAM Disk and analogues), with the letter Z, larger than 11500MB.
