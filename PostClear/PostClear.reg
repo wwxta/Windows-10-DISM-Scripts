@@ -137,6 +137,9 @@ Windows Registry Editor Version 5.00
 "Microsoft.QuickAction.Vpn"=hex(0):
 "Microsoft.QuickAction.QuietHours"=hex(0):
 "Microsoft.QuickAction.ScreenClipping"=hex(0):
+; Сжатие обоев
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"JPEGImportQuality"=dword:00000100
 ; Оформление по умолчанию. Для смешанных типов
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{5C4F28B5-F869-4E84-8E60-F11DB97C5CC7}]
 "Mode"=dword:00000001

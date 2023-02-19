@@ -18,7 +18,7 @@ else
 	dism /delete-image /imagefile:Z:\install.wim /index:2
 	dism /delete-image /imagefile:Z:\install.wim /index:1
 }
-# Mounting
+# Mounting install.wim
 mkdir Z:\Install
 dism /mount-image /imagefile:Z:\install.wim /index:1 /mountdir:Z:\Install
 # Adding a response file

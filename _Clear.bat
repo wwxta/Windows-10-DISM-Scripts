@@ -5,7 +5,7 @@ call :Clear>>Z:\Clear.log 2>&1
 EXIT /b 0
 
 :Clear
-title Compress Boot
+title Compress boot.wim
 start /w Z:\WimOptimize.exe Z:\boot.wim
 title Applying Clear.ps1
 dism /get-imageinfo /imagefile:Z:\install.wim /index:10
@@ -166,7 +166,7 @@ start /w Z:\WimOptimize.exe Z:\Install\Windows\System32\Recovery\Winre.wim
 TIMEOUT /T 1 /NOBREAK >nul
 title Copy PostClear
 if not exist Z:\Install\Windows\ru-RU\explorer.exe.mui (
-	del /f /q Z:\PostClear\SLMP-10.chm
+	del /f /q Z:\PostClear\Help.chm
 )
 move Z:\PostClear Z:\Install\ProgramData\PostClear
 title Unmounting
