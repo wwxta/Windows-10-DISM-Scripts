@@ -144,7 +144,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EventLog\Security]
 "MaxSize"=dword:013f0000
 "MaxSizeUpper"=dword:00000000
-"Retention"=dword:ffffffff
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EventLog\State]
 "MaxSize"=dword:00100000
 "MaxSizeUpper"=dword:00000000
