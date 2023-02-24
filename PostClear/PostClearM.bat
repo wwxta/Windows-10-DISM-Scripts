@@ -162,66 +162,6 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge" /v InstallLocation /t REG_SZ /d "%programfiles(x86)%\Microsoft\Edge\Application"
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft EdgeWebView" /v InstallLocation /t REG_SZ /d "%programfiles(x86)%\Microsoft\EdgeWebView\Application"
 TIMEOUT /T 1 /NOBREAK >nul
-title Disable audit channels
-auditpol /set /subcategory:"{0CCE923F-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9242-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9240-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9241-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9239-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9236-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9238-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE923A-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9237-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9235-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE922D-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9248-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE922B-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE922C-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE922E-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE924A-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE923E-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE923B-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE923C-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE923D-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9217-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9247-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9249-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE921A-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9218-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9219-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9216-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9215-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9243-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE921C-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE921B-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9222-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9221-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0cce9244-69ae-11d9-bed3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9224-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE921D-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9226-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9225-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9223-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE921F-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9227-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE921E-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0cce9245-69ae-11d9-bed3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9220-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0cce9246-69ae-11d9-bed3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE922F-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9230-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9231-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9233-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9232-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9234-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9229-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE922A-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9228-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9213-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9214-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9210-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9211-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
-auditpol /set /subcategory:"{0CCE9212-69AE-11D9-BED3-505054503030}" /success:disable /failure:disable
 title Finality
 rd /s /q "%programdata%\PostClear\Classic Shell"
 del /f /q %programdata%\PostClear\AdvancedRun.exe
