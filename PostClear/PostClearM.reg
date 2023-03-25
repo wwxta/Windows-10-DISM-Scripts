@@ -349,11 +349,4 @@ Windows Registry Editor Version 5.00
   00,31,00,00,00
 [HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open\DropTarget]
 "Clsid"="{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"
-; ClassicShell
-[-HKEY_CLASSES_ROOT\exefile\shellex\ContextMenuHandlers\StartMenuExt]
-[-HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers\StartMenuExt]
-[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\StartMenuExt]
-[-HKEY_CLASSES_ROOT\Launcher.SystemSettings\shellex\ContextMenuHandlers\StartMenuExt]
-[-HKEY_CLASSES_ROOT\Launcher.ImmersiveApplication\shellex\ContextMenuHandlers\StartMenuExt]
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
-"Classic Start Menu"=-
+
