@@ -31,7 +31,7 @@ Windows Registry Editor Version 5.00
 "StartupDelayInMSec"=dword:00000000
 ; Заголовки окон и границы окон
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM]
-"ColorPrevalence"=dword:00000001
+"ColorPrevalence"=dword:00000000
 ; Фоновые приложения
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications]
 "GlobalUserDisabled"=dword:00000001
@@ -60,11 +60,6 @@ Windows Registry Editor Version 5.00
 ; Не использовать индекс
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Search\Preferences]
 "WholeFileSystem"=dword:00000001
-; Переключение языка на CTRL+SHIFT
-[HKEY_CURRENT_USER\Keyboard Layout\Toggle]
-"Language Hotkey"="2"
-"Hotkey"="2"
-"Layout Hotkey"="3"
 ; Включить повышенную точность установки указателя
 [HKEY_CURRENT_USER\Control Panel\Mouse]
 "MouseSpeed"="0"
