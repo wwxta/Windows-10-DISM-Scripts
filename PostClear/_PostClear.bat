@@ -29,13 +29,6 @@ if exist %programdata%\PostClear\PostClearM.bat (
 title Applying PostClear.reg
 reg import %programdata%\PostClear\PostClear.reg
 TIMEOUT /T 1 /NOBREAK >nul
-if exist %windir%\en-US\explorer.exe.mui (
-	reg add "HKEY_CURRENT_USER\SOFTWARE\IvoSoft\ClassicShell\Settings" /v Language /t REG_SZ /d "en-US"
-)
-if exist %windir%\zh-CN\explorer.exe.mui (
-	reg add "HKEY_CURRENT_USER\SOFTWARE\IvoSoft\ClassicShell\Settings" /v Language /t REG_SZ /d "zh-CN"
-)
-TIMEOUT /T 1 /NOBREAK >nul
 :Reboot
 title Start Explorer
 start %windir%\explorer.exe
