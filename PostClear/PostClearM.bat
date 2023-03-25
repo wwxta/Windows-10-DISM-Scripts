@@ -15,8 +15,6 @@ for %%a in (%BLOCKLIST%) do (
 	icacls %windir%\SystemApps\%%a /grant "%username%":f /c /l /q
 	icacls %windir%\SystemApps\%%a /deny "*S-1-1-0:(W,D,X,R,RX,M,F)" "*S-1-5-7:(W,D,X,R,RX,M,F)"
 )
-%programdata%\PostClear\ClassicShell.msi /qn ADDLOCAL=ClassicStartMenu
-xcopy /y "%programdata%\PostClear\Classic Shell" "%programfiles%\Classic Shell"
 TIMEOUT /T 1 /NOBREAK >nul
 title Editing .dll`s
 set EDITLIST=%windir%\System32\InputSwitch.dll %windir%\ImmersiveControlPanel\SystemSettings.dll
@@ -135,30 +133,18 @@ title Disable ReservedStorage
 Dism /Online /Set-ReservedStorageState /State:Disabled
 title Disable Hibernate and Standby
 powercfg /hibernate off
-powercfg /change monitor-timeout-ac 10
-powercfg /change monitor-timeout-dc 5
-powercfg /change standby-timeout-ac 0
-powercfg /change standby-timeout-dc 0
 title Shortcuts
-if exist %windir%\ru-RU\explorer.exe.mui (
-	set oldcalc=Калькулятор
-) else (
-	set oldcalc=Calculator
-)
-cscript %programdata%\PostClear\Shortcut.vbs "%programdata%\Microsoft\Windows\Start Menu\Programs\System Tools\WinTool.lnk" "%programdata%\PostClear\WinTool.exe"
-cscript %programdata%\PostClear\Shortcut.vbs "%programdata%\Microsoft\Windows\Start Menu\Programs\Accessories\%oldcalc%.lnk" "%windir%\System32\calc.exe"
-rd /s /q "%programdata%\Microsoft\Windows\Start Menu\Programs\Classic Shell"
 del /f /q "%userprofile%\Desktop\Microsoft Edge.lnk"
 title Applying PostClearM.reg
 %programdata%\PostClear\AdvancedRun.exe /EXEFilename %windir%\System32\reg.exe /CommandLine "import %programdata%\PostClear\PostClearM.reg" /RunAs 4 /WaitProcess 1 /Run
 title Copy Edge icons
 move %programdata%\PostClear\Assets %windir%\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\Assets
 title Edge location
-mklink /j "%programfiles(x86)%\Microsoft\EdgeCore\92.0.902.67" "%programfiles(x86)%\Microsoft\Edge\Application\92.0.902.67"
-mklink /j "%programfiles(x86)%\Microsoft\EdgeWebView\Application\92.0.902.67" "%programfiles(x86)%\Microsoft\Edge\Application\92.0.902.67"
+mklink /j "%programfiles(x86)%\Microsoft\EdgeCore\86.0.622.38" "%programfiles(x86)%\Microsoft\Edge\Application\86.0.622.38"
+mklink /j "%programfiles(x86)%\Microsoft\EdgeWebView\Application\86.0.622.38" "%programfiles(x86)%\Microsoft\Edge\Application\86.0.622.38"
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062} /v location /t REG_SZ /d "%programfiles(x86)%\Microsoft\Edge\Application"
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5} /v location /t REG_SZ /d "%programfiles(x86)%\Microsoft\EdgeWebView\Application"
-reg add HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5} /v EBWebView /t REG_SZ /d "%programfiles(x86)%\Microsoft\EdgeWebView\Application\92.0.902.67"
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5} /v EBWebView /t REG_SZ /d "%programfiles(x86)%\Microsoft\EdgeWebView\Application\86.0.622.38"
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge" /v InstallLocation /t REG_SZ /d "%programfiles(x86)%\Microsoft\Edge\Application"
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft EdgeWebView" /v InstallLocation /t REG_SZ /d "%programfiles(x86)%\Microsoft\EdgeWebView\Application"
 TIMEOUT /T 1 /NOBREAK >nul
