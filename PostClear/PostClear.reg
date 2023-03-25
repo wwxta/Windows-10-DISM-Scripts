@@ -27,7 +27,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
 "{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
 ; Ускорение автозапуска
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Serialize]
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Serialize]
 "StartupDelayInMSec"=dword:00000000
 ; Заголовки окон и границы окон
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM]
@@ -160,7 +160,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Control Panel\Desktop]
 "JPEGImportQuality"=dword:00000100
 ; Оформление по умолчанию. Для смешанных типов
-[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{5C4F28B5-F869-4E84-8E60-F11DB97C5CC7}]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\SOFTWARE\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{5C4F28B5-F869-4E84-8E60-F11DB97C5CC7}]
 "Mode"=dword:00000001
 "LogicalViewMode"=dword:00000003
 "IconSize"=dword:00000021
@@ -171,7 +171,7 @@ Windows Registry Editor Version 5.00
   1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,a5,01,00,00,30,f1,25,b7,ef,47,1a,\
   10,a5,f1,02,60,8c,9e,eb,ac,0e,00,00,00,64,00,00,00,30,f1,25,b7,ef,47,1a,10,\
   a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00
-[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{7FDE1A1E-8B31-49A5-93B8-6BE14CFA4943}]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\SOFTWARE\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{7FDE1A1E-8B31-49A5-93B8-6BE14CFA4943}]
 "Mode"=dword:00000004
 "Sort"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,30,f1,\
   25,b7,ef,47,1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,01,00,00,00
@@ -182,7 +182,7 @@ Windows Registry Editor Version 5.00
   a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00,ed,30,bd,da,43,00,89,47,a7,\
   f8,d0,13,a4,73,66,22,64,00,00,00,15,02,00,00
 ; Для Документов
-[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{7D49D726-3C21-4F05-99AA-FDC2C9474656}]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\SOFTWARE\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{7D49D726-3C21-4F05-99AA-FDC2C9474656}]
 "Mode"=dword:00000001
 "LogicalViewMode"=dword:00000003
 "IconSize"=dword:00000021
@@ -193,7 +193,7 @@ Windows Registry Editor Version 5.00
   1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,a5,01,00,00,30,f1,25,b7,ef,47,1a,\
   10,a5,f1,02,60,8c,9e,eb,ac,0e,00,00,00,64,00,00,00,30,f1,25,b7,ef,47,1a,10,\
   a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00
-[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{36011842-DCCC-40FE-AA3D-6177EA401788}]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\SOFTWARE\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{36011842-DCCC-40FE-AA3D-6177EA401788}]
 "Mode"=dword:00000004
 "Sort"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,30,f1,\
   25,b7,ef,47,1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,01,00,00,00
@@ -204,7 +204,7 @@ Windows Registry Editor Version 5.00
   a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00,ed,30,bd,da,43,00,89,47,a7,\
   f8,d0,13,a4,73,66,22,64,00,00,00,15,02,00,00
 ; Для Картинок
-[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{B3690E58-E961-423B-B687-386EBFD83239}]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\SOFTWARE\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{B3690E58-E961-423B-B687-386EBFD83239}]
 "Mode"=dword:00000001
 "LogicalViewMode"=dword:00000003
 "IconSize"=dword:00000060
@@ -215,7 +215,7 @@ Windows Registry Editor Version 5.00
   1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,a5,01,00,00,30,f1,25,b7,ef,47,1a,\
   10,a5,f1,02,60,8c,9e,eb,ac,0e,00,00,00,64,00,00,00,30,f1,25,b7,ef,47,1a,10,\
   a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00
-[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{4DCAFE13-E6A7-4C28-BE02-CA8C2126280D}]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\SOFTWARE\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{4DCAFE13-E6A7-4C28-BE02-CA8C2126280D}]
 "Mode"=dword:00000004
 "Sort"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,30,f1,\
   25,b7,ef,47,1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,01,00,00,00
@@ -226,7 +226,7 @@ Windows Registry Editor Version 5.00
   a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00,ed,30,bd,da,43,00,89,47,a7,\
   f8,d0,13,a4,73,66,22,64,00,00,00,15,02,00,00
 ; Для Музыки
-[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{94D6DDCC-4A68-4175-A374-BD584A510B78}]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\SOFTWARE\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{94D6DDCC-4A68-4175-A374-BD584A510B78}]
 "Mode"=dword:00000004
 "Sort"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,30,f1,\
   25,b7,ef,47,1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,01,00,00,00
@@ -235,7 +235,7 @@ Windows Registry Editor Version 5.00
   1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,a5,01,00,00,30,f1,25,b7,ef,47,1a,\
   10,a5,f1,02,60,8c,9e,eb,ac,0e,00,00,00,64,00,00,00,30,f1,25,b7,ef,47,1a,10,\
   a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00
-[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{71689AC1-CC88-45D0-8A22-2943C3E7DFB3}]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\SOFTWARE\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{71689AC1-CC88-45D0-8A22-2943C3E7DFB3}]
 "Mode"=dword:00000004
 "Sort"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,30,f1,\
   25,b7,ef,47,1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,01,00,00,00
@@ -246,7 +246,7 @@ Windows Registry Editor Version 5.00
   a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00,ed,30,bd,da,43,00,89,47,a7,\
   f8,d0,13,a4,73,66,22,64,00,00,00,15,02,00,00
 ; Для Видео
-[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{5FA96407-7E77-483C-AC93-691D05850DE8}]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\SOFTWARE\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{5FA96407-7E77-483C-AC93-691D05850DE8}]
 "Mode"=dword:00000001
 "LogicalViewMode"=dword:00000003
 "IconSize"=dword:00000060
@@ -257,7 +257,7 @@ Windows Registry Editor Version 5.00
   1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,a5,01,00,00,30,f1,25,b7,ef,47,1a,\
   10,a5,f1,02,60,8c,9e,eb,ac,0e,00,00,00,64,00,00,00,30,f1,25,b7,ef,47,1a,10,\
   a5,f1,02,60,8c,9e,eb,ac,0c,00,00,00,59,00,00,00
-[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{EA25FBD7-3BF7-409E-B97F-3352240903F4}]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\SOFTWARE\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{EA25FBD7-3BF7-409E-B97F-3352240903F4}]
 "Mode"=dword:00000004
 "Sort"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,30,f1,\
   25,b7,ef,47,1a,10,a5,f1,02,60,8c,9e,eb,ac,0a,00,00,00,01,00,00,00
